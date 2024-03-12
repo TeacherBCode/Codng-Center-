@@ -100,3 +100,26 @@
         font-weight: 200;
         font-style: normal;
     }
+
+@media (prefers-color-scheme: dark) {
+    .control-icon {
+        color: var(--bs-dark-text-emphasis);
+        background-color: var(--bs-dark-border-subtle);
+    }
+}
+
+
+@media screen and (max-width : 800px){
+    #nav-extend{
+        display: none;
+    }
+}
+
+@media  screen and not (max-width : 800px){
+    #nav-min-buttons{
+        display: none;
+    }
+    #navbarToggleExternalContent{
+        display: none;
+    }
+}

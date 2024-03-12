@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +13,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="sarabun-regular">
+
+
+
     <!-- ========== Header Section Starts Here ========== -->
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <header class="head_nav d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom ">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img class="mx-3 rounded" src="./images/IMG_20231028_215303_395.jpg" alt="Coding Center Logo Img" width=45px height = 45px>
                 <span class="fs-3 righteous-regular">Codng Center</span>
             </a>
-    
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-            </ul>
+            <div id="nav-extend" class="">
+                <ul class="nav nav-pills">
+                    <li class="nav-item "><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#custom-cards" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Nav Collapse Button Sub Section Starts Here  -->
+            <div  class="d-flex flex-column">
+                <nav id="nav-min-buttons" class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+                <div class="collapse " id="navbarToggleExternalContent" data-bs-theme="dark">
+                    <ul class="nav nav-pills d-flex flex-column ">
+                        <li class="nav-item "><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#custom-cards" class="nav-link fs-4">Courses</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link fs-4">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link fs-4">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link fs-4">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Nav Collapse Button Sub Section Ends Here  -->
         </header>
     </div>
     
@@ -37,10 +64,48 @@
 
     <!-- ========== Hero Section Starts Here ========== -->
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/Gemini_Generated_Image (7).jpeg" class="d-block w-100" alt="Learn_Code">
+                            <div class="carousel-caption fs-3 text-light bg-dark  bg-opacity-50">
+                                <p>Learn to Code</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Gemini_Generated_Image (15).jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption fs-3 text-light bg-dark bg-opacity-50">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Gemini_Generated_Image (12).jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption fs-3 text-light bg-dark bg-gradient bg-opacity-75">
+                                <p>Learn to Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon control-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon control-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
@@ -54,8 +119,7 @@
             </div>
         </div>
     </div>
-    
-    
+
     <!-- ========== Hero Section Ends Here ========== -->
     
 
@@ -64,7 +128,7 @@
     <!-- ========== Feature Section Starts Here ========== -->
     
     <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Custom cards</h2>
+        <h2 class="pb-2 border-bottom">Course</h2>
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <div class="col">
@@ -155,10 +219,19 @@
     
 
 
+    <!-- ========== Arrow Section Starts Here  ========== -->
+    <div id="upArrow" class="invisible fixed-bottom d-flex justify-content-end">
+        <a href="#top" class="px-2 py-5">
+            <img src="./images/arrow-25859_1280.png" width = 50px alt="Up_Arrow_Img">
+        </a>
+    </div>
 
+    <!-- ========== Arrow Section Ends Here  ========== -->
+    
 
     <!-- ==========  Footer Section Starts here ========== -->
     
+
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
@@ -170,10 +243,9 @@
         </footer>
     </div>
 
-
     <!-- ==========  Footer Section Ends here ========== -->
     
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
