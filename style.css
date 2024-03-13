@@ -131,3 +131,11 @@
 #headText2{
     color: #027afb;
 }
+
+hr{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px dotted #9096a3;
+    width : 39%;
+}
